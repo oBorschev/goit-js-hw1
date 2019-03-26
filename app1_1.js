@@ -6,7 +6,7 @@ const pass = prompt("Enter password");
 
 if (pass === null) {
   alert("Canceled by user!");
-} else if (!pass.includes(ADMIN_PASSWORD)) {
+} else if (pass !== ADMIN_PASSWORD) {
   alert("Access denied, wrong password!");
 } else {
   alert("Welcome!");
